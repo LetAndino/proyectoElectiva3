@@ -1,0 +1,186 @@
+{% extends './plantilla.html' %}
+{% block title %} Catálogo {% endblock %}
+
+{% block body %}
+<div class="container my-5">
+    <h1 class="text-center mb-4">Catálogo de Productos</h1>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <!-- Ramos de Flores -->
+        <div class="col">
+            <div class="card border-danger">
+                <img src="static/ramo.jpg" class="card-img-top" alt="Ramos de Flores">
+                <div class="card-body">
+                    <h5 class="card-title">Ramos de Flores</h5>
+                    <p class="card-text">Explora nuestra variedad de ramos de flores frescas, perfectos para cualquier ocasión.</p>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalRamos">Ver Más</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Arreglos Florales -->
+        <div class="col">
+            <div class="card border-danger">
+                <img src="static/arreglosFlorales.jpg" class="card-img-top" alt="Arreglos Florales">
+                <div class="card-body">
+                    <h5 class="card-title">Arreglos Florales</h5>
+                    <p class="card-text">Descubre nuestros elegantes arreglos florales diseñados para embellecer cualquier espacio.</p>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalArreglos">
+                        Ver Más
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Canastas de Desayuno -->
+        <div class="col">
+            <div class="card border-danger">
+                <img src="static/canastaDesayuno.jpg" class="card-img-top" alt="Canastas de Desayuno">
+                <div class="card-body">
+                    <h5 class="card-title">Canastas Desayuno y Meriendas</h5>
+                    <p class="card-text">Disfruta de nuestras deliciosas canastas, ideales para sorprender a tus seres queridos.</p>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDesayuno">
+                        Ver Más
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coronas funebres -->
+        <div class="col">
+            <div class="card border-danger">
+                <img src="static/funebre.jpg" class="card-img-top" alt="Coronas Fúnebres">
+                <div class="card-body">
+                    <h5 class="card-title">Coronas Fúnebres</h5>
+                    <p class="card-text">Coronas Fúnebres para los momentos difíciles.</p>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalCoronas">
+                        Ver Más
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modales -->
+    <!-- Modal Ramos -->
+    <div class="modal fade" id="modalRamos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ramos de Flores</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <td> <h4>Ramo Rosas Rojas</h4><h6>Gs.150 000</h6><img src="static/ramorosas.jpg"  style='width: 100%; max-width: 200px;' class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalPedir"></td>
+                                <td> <h4>Ramo Rosas Amarillas</h4><h6>Gs.135 000</h6><img src="static/ramorosasamarillas.jpg"  style='width: 100%; max-width: 200px;'></td>
+                            </tr>
+                            <tr>
+                                <td><h4>Ramo Un Girasol</h4><h6>Gs.90 000</h6><img src="static/ramoamarillo.jpg"  style='width: 100%; max-width: 200px;'></td>
+                                <td><h4>Ramo Girasoles</h4><h6>Gs.150 000</h6><img src="static/ramogirasoles.jpg"  style='width: 100%; max-width: 200px;'></td>
+                            </tr>
+                            <tr>
+                                <td><h4>Ramo Flores Coloridos</h4><h6>Gs.130 000</h6><img src="static/ramoColorido.jpg" style='width: 100%; max-width: 200px;'></td>
+                                <td><h4>Ramo Graduada</h4><h6>Gs.140 000</h6><img src="static/ramoGraduada.jpeg" style='width: 100%; max-width: 200px;'></td>
+                            </tr>
+                            <tr>
+                                <td><h4>Ramo Novias</h4><h6>Gs.150 000</h6><img src="static/ramoNovias.jpg"  style='width: 100%; max-width: 200px;'></td>
+                                <td><h4>Ramo con Billetes</h4><h6>Gs.100 000</h6><img src="static/ramobilletes.jfif"  style='width: 100%; max-width: 200px;'></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Arreglos -->
+    <div class="modal fade" id="modalArreglos" tabindex="-1" aria-labelledby="exampleModalLabelArreglos" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Arreglos Florales</h5>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body'>
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <td> <h4>Arreglo Rosas Rojas</h4><h6>Gs.200 000</h6><img src="static/arreglorosas.jpg"  style='width: 100%; max-width: 200px;'></td>
+                                <td> <h4>Arreglo Rosas Amarillas</h4><h6>Gs.140 000</h6><img src="static/arreglosamarillos.jpg" style='width: 100%; max-width: 200px;'></td>
+                            </tr>
+                            <tr>
+                                <td><h4>Arreglo Coloridos</h4><h6>Gs.160 000</h6><img src="static/arreglosColoridos.jpeg" style='width: 100%; max-width: 200px;'></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Desayuno y merienda-->
+    <div class='modal fade' id='modalDesayuno' tabindex='-1' aria-labelledby='exampleModalLabelDesayuno' aria-hidden='true'>
+        <div class='modal-dialog modal-lg'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title'>Canastas de Desayuno y Merienda</h5>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body'>
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <td> <h4>Canasta de Desayuno</h4><h6>Gs.100 000</h6><img src="static/canastaDesayuno1.jpg"  style='width: 100%; max-width: 200px;'></td>
+                                <td> <h4>Canasta de Merienda</h4><h6>Gs.100 000</h6><img src="static/canastaMerienda1.jfif"  style='width: 100%; max-width: 200px;'></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Coronas -->
+    <div class='modal fade' id='modalCoronas' tabindex='-1' aria-labelledby='exampleModalLabelMeriendas' aria-hidden='true'>
+        <div class='modal-dialog modal-lg'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title'>Coronas y Arreglos Fúnebres</h5>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body'>
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <td> <h4>Coronas Fúnebres Blanco</h4><h6>Gs.500 000</h6><img src="static/coronasFunebres.jpg"  style='width: 100%; max-width: 200px;'></td>
+                                <td> <h4>Coronas Fúnebres Coloridas</h4><h6>Gs.450 000</h6><img src="static/coronasFunebresColoridas.jpg"  style='width: 100%; max-width: 200px;'></td>
+                            </tr>
+                            <tr>
+                                <td><h4>Arreglo Fúnebre Blanco</h4><h6>Gs.150 000</h6><img src="static/arreglosfunebres.jpg"  style='width: 100%; max-width: 200px;'></td>
+                                <td><h4>Arreglo Fúnebre Combinado</h4><h6>Gs.160 000</h6><img src="static/arreglosfunebres2.jpg"  style='width: 100%; max-width: 200px;'></td>
+                            </tr>
+                        </tbody>
+                    </table></div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Pedir-->
+    <div class='modal fade' id='modalPedir' tabindex='-1' aria-labelledby='exampleModalLabelPedir' aria-hidden='true'>
+        <div class='modal-dialog modal-sm'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title'>Hacer Pedido</h5>
+                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div class='modal-body'>
+                    <p class="card-text"> <a href="https://wa.me/+595983272002"> <button type="button" class="btn btn-success"> WHATSAPP</a></button> </p>
+                       
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

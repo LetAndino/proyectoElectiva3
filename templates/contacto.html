@@ -1,0 +1,61 @@
+{% extends './plantilla.html' %}
+{% block title %} Contacto {% endblock %}
+
+{% block body %}
+<div class="container my-5">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="alert alert-{{ category }}">{{ message }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">PÓNGASE EN CONTACTO</h5>
+                    <form method="POST" action="{{ url_for('enviar_mensaje') }}">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Correo</label>
+                            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                            <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie más.</div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">SU MENSAJE</span>
+                            <textarea name="mensaje" class="form-control" aria-label="With textarea" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-danger">ENVIAR MENSAJE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">CONTACTÁ CON NOSOTROS</h5>
+                    <p class="card-text">WhatsApp: +595 983 272 002<br>
+                    Correo: floreriaestrellafederalvca@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mapa de ubicación -->
+    <div class="card mb-4">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d898.2012811552448!2d-56.44697503589356!3d-25.77699957734224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945ecd0039969969%3A0xaea91abbd8be6869!2sFlorer%C3%ADa%20Estrella%20Federal!5e0!3m2!1ses!2spy!4v1730681219607!5m2!1ses!2spy" 
+      width= 100%
+      height="450" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+        <div class="card-body">
+            <h5 class="card-title">Nuestra Ubicación</h5>
+            <p class="card-text">Villarrica - Paraguay</p>
+        </div>
+    </div>      
+</div>
+{% endblock %}

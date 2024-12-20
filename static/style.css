@@ -1,0 +1,153 @@
+body {
+  background-color: white; /* Cambia el color de fondo a blanco */
+}
+.topnav {
+  overflow: hidden;
+  background-color: #ac1010ef;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #d6a5a5;
+  color: rgb(119, 21, 21);
+}
+
+.carousel-iner {
+  height: 400px; /* Altura del carrusel */
+}
+
+.posicion {
+  background-position: center; /* Centra la imagen */
+}
+.carousel-baackground {
+  height: 100%;
+  background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen */
+}
+
+.carousel-caaption {
+  position: absolute;
+  bottom: 20px; /* Posición del texto desde la parte inferior */
+  left: 50%;
+  transform: translateX(-50%); /* Centra el texto horizontalmente */
+  color: white; /* Color del texto */
+}
+
+ /* Estilos generales para los cards */
+ .card {
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para el formulario */
+.form-control {
+  border-radius: 5px; /* Bordes redondeados en inputs */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Color del botón */
+  border: none; /* Sin borde */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Color del botón al pasar el mouse */
+}
+
+/* Estilos para el texto del mapa */
+.card-title {
+  font-weight: bold; /* Títulos en negrita */
+}
+
+    /* Estilos generales para las tarjetas */
+    .card {
+      border-radius: 10px; /* Bordes redondeados */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+
+  /* Estilos para los encabezados */
+  .card-header {
+      background-color: #f8f9fa; /* Color de fondo claro para el encabezado */
+      font-weight: bold; /* Negrita para los encabezados */
+  }
+
+  /* Estilos para el texto */
+  .text-primary {
+      color: #007bff; /* Color azul para el texto */
+  }
+
+  /* Espaciado entre tarjetas */
+  .mb-4 {
+      margin-bottom: 1.5rem !important; /* Espaciado inferior entre tarjetas */
+  }
+
+  /*Contactos*/
+  /* Estilos para las tarjetas */
+  .card {
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: var(--wp--preset--shadow--natural); /* Sombra suave */
+}
+
+/* Estilos para el mapa */
+.map-div {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Proporción 16:9 */
+    height: 0; /* Altura cero para mantener la proporción */
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+}
+
+.map-div iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Sin borde */
+}
+
+/* Estilos para el texto */
+.text-primary {
+    color: var(--wp--preset--color--vivid-red); /* Color rojo oscuro */
+}
+
+/*style de catalogo*/
+ /* Estilos generales */
+ .container {
+  max-width: 1200px; /* Ancho máximo del contenedor */
+}
+
+.card {
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.card-img-top {
+  height: 200px; /* Altura fija para las imágenes */
+  object-fit: cover; /* Mantiene la proporción y cubre el espacio */
+}
+
+h1 {
+  color: #c82333; /* Rojo oscuro para el título */
+}
+.float-wa{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  z-index:100;
+}
