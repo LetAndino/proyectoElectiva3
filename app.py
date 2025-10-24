@@ -11,7 +11,7 @@ app.secret_key = 'tu_clave_secreta'
 SMTP_SERVER = 'smtp.gmail.com' 
 SMTP_PORT = 587
 SMTP_USERNAME = 'leticiarosalva@gmail.com'  
-SMTP_PASSWORD = 'L371c1@97'  
+SMTP_PASSWORD = '123'  
 
 # Definición del formulario para comentarios
 class CommentForm(FlaskForm):
